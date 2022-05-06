@@ -33,7 +33,7 @@ fn solve(intersections: i32, shortcuts: &[i32]) -> Vec<String> {
     // skip home and set it to 0
     let mut result: Vec<String> = vec![0.to_string()];
 
-    for intersection in (2..=intersections) {
+    for intersection in 2..=intersections {
         match check_shortcut(shortcuts, intersection, 1) {
             Some(check_shortcut) => {
                 println!("{}", check_shortcut);
